@@ -473,6 +473,104 @@
             /* Behind UI elements but above background */
             opacity: 0.5;
         }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 768px) {
+            .main-header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 15px;
+                width: 100%;
+                justify-content: center;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                padding-top: 10px;
+            }
+
+            .nav-links a {
+                margin: 0;
+                font-size: 0.8rem;
+            }
+
+            .glitch-text {
+                font-size: 2.2rem;
+                line-height: 1.2;
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 30px;
+            }
+
+            .input-wrapper {
+                flex-direction: column;
+                gap: 10px;
+                padding: 0 10px;
+            }
+
+            .input-container {
+                width: 100%;
+            }
+
+            .stats-ticker {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .dashboard-section {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 150px;
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                display: flex;
+                overflow-x: auto;
+                padding: 10px;
+            }
+
+            .sidebar-menu {
+                display: flex;
+                gap: 10px;
+            }
+
+            .menu-item {
+                white-space: nowrap;
+                padding: 8px 15px;
+                margin-bottom: 0;
+                border-left: none;
+                border-bottom: 2px solid transparent;
+            }
+
+            .menu-item:hover,
+            .menu-item.active {
+                border-left-color: transparent;
+                border-bottom-color: var(--accent-main);
+            }
+
+            .dashboard-main {
+                padding: 20px;
+            }
+
+            .factors-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dashboard-header h2 {
+                font-size: 1.2rem;
+            }
+
+            .score-value {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 
